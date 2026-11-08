@@ -1,0 +1,125 @@
+email_id,email_text,category,urgency,requester,due_date,amounts,ids
+H001,"Hey, do you have the latest headcount numbers for A&T? Boss wants them before tomorrow morning. Thx
+
+Dan",Report Request,High,Dan,tomorrow morning,,
+H002,"From: Grace Liu <grace.liu@example.com>
+Subject: monthly pack
+
+Hi! When you have a moment could you share the October opex pack? Planning to look at it end of month.
+
+Cheers,
+Grace Liu",Report Request,Low,Grace Liu,end of month,,
+H003,"Subject: REQ-55821 capex view
+
+Team - per REQ-55821 please send the capex by project view, needed by Thursday for the review.
+
+Regards,
+Mark Davis
+Finance",Report Request,Medium,Mark Davis,Thursday,,REQ-55821
+H004,"From: Rita Gomez <rita.gomez@example.com>
+Subject: numbers don't tie
+
+The dashboard has CC-3301 at $48K but SAP says $41K. Something is off, can someone take a look by Friday?
+
+Thanks,
+Rita Gomez",Data Correction,Medium,Rita Gomez,Friday,$48K;$41K,CC-3301
+H005,"Subject: wrong mapping!!
+
+This needs fixing ASAP - the freight line is booked to CC-7720 instead of CC-7721 and the CFO sees it in an hour.
+
+Best,
+Tom Reyes",Data Correction,High,Tom Reyes,ASAP,,CC-7720;CC-7721
+H006,"Hi, small thing - the September aging report double counts one supplier. Not urgent, sometime next week is fine.
+
+Thank you,
+Irene Park",Data Correction,Low,Irene Park,next week,,
+H007,"From: Ben Ortiz <ben.ortiz@example.com>
+Subject: access pls
+
+I can't open the Snowflake finance schema, getting permission denied. Can you add me today? Close starts tomorrow.
+
+Thanks,
+Ben Ortiz",Access Request,High,Ben Ortiz,today,,
+H008,"Subject: new hire
+
+Our new analyst Paula starts Monday. Could you set her up on the Power BI workspace by Monday?
+
+Best,
+Laura Fields
+Manager",Access Request,Medium,Laura Fields,Monday,,
+H009,"From: Sam Wu <sam.wu@example.com>
+Subject: read-only SharePoint
+
+Whenever you get a chance, the auditors would like read-only rights to the 2025 folder.
+
+Regards,
+Sam Wu",Access Request,Low,Sam Wu,,,
+H010,"Subject: sign-off PO-771204
+
+Need your OK on PO-771204 ($18,400.00) for the HVAC repair, vendor won't start until it's approved. EOD today please!
+
+Karen Hill",Approval Request,High,Karen Hill,EOD today,"$18,400.00",PO-771204
+H011,"From: Victor Chan <victor.chan@example.com>
+Subject: training budget
+
+Can you approve $3.5K for the team's Excel training? It's on PO-660031, by Nov 21 would be ideal.
+
+Thanks,
+Victor Chan",Approval Request,Medium,Victor Chan,Nov 21,$3.5K,PO-660031
+H012,"Subject: renewal
+
+The software renewal (PO-512900, $92K) is due at end of quarter, please approve when you can.
+
+Best regards,
+Nadia Ali",Approval Request,Low,Nadia Ali,end of quarter,$92K,PO-512900
+H013,"From: Peter Novak <peter.novak@example.com>
+Subject: utilities???
+
+Utilities are $210K over plan this month. What's driving it? Need a view in 2 hours for the exec call.
+
+Peter Novak",Ad-hoc Analysis,High,Peter Novak,in 2 hours,$210K,
+H014,"Hi team, could someone break down the overtime trend by department and tell me why Fab is up 18%? By Wednesday works.
+
+Thanks,
+Julia Stone",Ad-hoc Analysis,Medium,Julia Stone,Wednesday,,
+H015,"Subject: idea
+
+Out of curiosity, would be nice to see how scrap cost correlates with volume over the last 2 years. No rush at all.
+
+Best,
+Omar Farouk",Ad-hoc Analysis,Low,Omar Farouk,,,
+H016,"From: Chloe Martin <chloe.martin@example.com>
+Subject: quick call?
+
+Can we jump on a call today to go over the forecast changes? 15 min is enough.
+
+Thanks,
+Chloe Martin",Meeting Request,High,Chloe Martin,today,,
+H017,"Subject: dashboard walkthrough
+
+I'd love a walkthrough of the new spending dashboard. Could you book something by end of week?
+
+Regards,
+George Patel",Meeting Request,Medium,George Patel,end of week,,
+H018,"Hi, let's find time next week to brainstorm the 2027 reporting roadmap.
+
+Cheers,
+Mia Johansson",Meeting Request,Low,Mia Johansson,next week,,
+H019,"From: IT Service Desk <it.desk@example.com>
+Subject: planned outage
+
+Please note the VPN will be unavailable Sunday 2-4 AM for upgrades. No action required.
+
+Regards,
+IT Service Desk",FYI / No Action,Low,IT Service Desk,,,
+H020,"Subject: congrats
+
+Just wanted to share that the audit closed with zero findings. Great work everyone!
+
+Best,
+Robert King
+Controller",FYI / No Action,Low,Robert King,,,
+H021,"For awareness: the exchange rate table for November has been loaded in SAP. Nothing needed from you.
+
+Thanks,
+Elena Petrova",FYI / No Action,Low,Elena Petrova,,,
