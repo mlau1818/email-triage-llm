@@ -2,9 +2,9 @@
 Evaluate the triage system against the labeled datasets.
 
 Usage:
-    python src/evaluate.py                      # both datasets
-    python src/evaluate.py --datasets data/emails_handwritten.csv
-    python src/evaluate.py --limit 30           # quick run on the first 30 emails
+    python evaluate.py                      # both datasets
+    python evaluate.py --datasets data/emails_handwritten.csv
+    python evaluate.py --limit 30           # quick run on the first 30 emails
 
 Outputs (folder results/):
     predictions_<dataset>.csv   one row per email with predictions and labels

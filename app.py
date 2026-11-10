@@ -2,8 +2,8 @@
 Gradio interface for the email triage + extraction system.
 
 Usage:
-    python src/app.py            # local: open http://127.0.0.1:7860
-    python src/app.py --share    # public link (use this in Google Colab)
+    python app.py            # local: open http://127.0.0.1:7860
+    python app.py --share    # public link (use this in Google Colab)
 """
 import argparse
 import os
@@ -14,7 +14,7 @@ import pandas as pd
 
 from triage import EmailTriage, sort_by_urgency
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.abspath(__file__))
 SAMPLE_PATH = os.path.join(ROOT, "data", "emails_handwritten.csv")
 URGENCY_BADGE = {"High": "🔴 High", "Medium": "🟠 Medium", "Low": "🟢 Low"}
 

@@ -44,7 +44,7 @@ pequeños y públicos de Hugging Face.
                              sender ask the recipient to do? List the
                              actions."
   Solicitante, fecha,        Reglas (expresiones regulares) en
-  montos, IDs                src/extractors.py
+  montos, IDs                extractors.py
 
 Los modelos se descargan solos de Hugging Face la primera vez (~2 GB).
 
@@ -58,13 +58,12 @@ Los modelos se descargan solos de Hugging Face la primera vez (~2 GB).
   ├── data/
   │   ├── emails.csv              <- 140 correos sintéticos etiquetados
   │   └── emails_handwritten.csv  <- 21 correos escritos a mano (test difícil)
-  ├── src/
-  │   ├── generate_data.py        <- genera data/emails.csv
-  │   ├── make_handwritten.py     <- genera data/emails_handwritten.csv
-  │   ├── extractors.py           <- extracción por reglas
-  │   ├── triage.py               <- sistema principal (modelos + reglas)
-  │   ├── evaluate.py             <- métricas y matrices de confusión
-  │   └── app.py                  <- interfaz gráfica (Gradio)
+  ├── generate_data.py            <- genera data/emails.csv
+  ├── make_handwritten.py         <- genera data/emails_handwritten.csv
+  ├── extractors.py               <- extracción por reglas
+  ├── triage.py                   <- sistema principal (modelos + reglas)
+  ├── evaluate.py                 <- métricas y matrices de confusión
+  ├── app.py                      <- interfaz gráfica (Gradio)
   └── results/                    <- se crea al correr evaluate.py
 
 
@@ -74,7 +73,7 @@ Es un dataset PROPIO y viene incluido en la carpeta data/ del repositorio,
 no hay que descargar nada.
 
   data/emails.csv  - 140 correos en inglés generados con plantillas
-     (src/generate_data.py, semilla 42): 20 por categoría, con remitentes,
+     (generate_data.py, semilla 42): 20 por categoría, con remitentes,
      montos, IDs y plazos aleatorios.
   data/emails_handwritten.csv - 21 correos escritos a mano (3 por
      categoría) con redacción más informal y variada, para probar el
@@ -88,8 +87,8 @@ Categorías: Report Request, Data Correction, Access Request, Approval
 Request, Ad-hoc Analysis, Meeting Request, FYI / No Action.
 
 Si se borran, se regeneran idénticos con:
-    python src/generate_data.py
-    python src/make_handwritten.py
+    python generate_data.py
+    python make_handwritten.py
 y quedan guardados en data/ (el código los busca ahí).
 
 
@@ -123,11 +122,11 @@ OPCIÓN B - Local (Python 3.10 o superior)
   3. Instalar dependencias:
        pip install -r requirements.txt
   4. Correr la evaluación (desde la carpeta raíz del proyecto):
-       python src/evaluate.py
+       python evaluate.py
      Opcional, prueba rápida con pocos correos:
-       python src/evaluate.py --limit 20
+       python evaluate.py --limit 20
   5. Abrir la interfaz:
-       python src/app.py
+       python app.py
      y entrar a http://127.0.0.1:7860 en el navegador.
 
 Tiempo aproximado: la primera ejecución descarga los modelos (2-5 min).
@@ -167,7 +166,7 @@ muestra cuánto aporta combinar el modelo con reglas simples.
   - Los correos son sintéticos y en inglés; con correos reales el
     desempeño puede variar.
   - El zero-shot depende mucho de cómo se redactan las descripciones de
-    las categorías (CATEGORY_DESCRIPTIONS en src/triage.py).
+    las categorías (CATEGORY_DESCRIPTIONS en triage.py).
   - flan-t5-base es un modelo pequeño: los resúmenes y tareas pueden ser
     genéricos o incompletos en correos largos. Se puede cambiar a
     google/flan-t5-large en GEN_MODEL (más lento, mejor calidad).
